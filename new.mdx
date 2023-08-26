@@ -1,10 +1,18 @@
 ---
-title: "My New Post"
-date: "2023-04-19"
-tags: ["General", "SSG/SSR", "New"]
+title: 'This is my New Article'
+date: '2023-04-18'
+tags: ['next.js','nextjs','new']
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+
+```ts
+const sum = (num1: number, num2: number): number => {
+    return num1 + num2
+}
+
+console.log(sum(4,8)) //12
+```
 
 You can use Static Generation for many types of pages, including:
 
@@ -12,13 +20,6 @@ You can use Static Generation for many types of pages, including:
 - Blog posts
 - E-commerce product listings
 - Help and documentation
-
-```
-<div className="text-center">
-    <p className="mt-10">Sorry, no posts for that keyword.</p>
-    <Link href="/">Back to Home</Link>
-</div>
-```
 
 You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
 
