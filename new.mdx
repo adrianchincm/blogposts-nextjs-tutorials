@@ -13,6 +13,13 @@ You can use Static Generation for many types of pages, including:
 - E-commerce product listings
 - Help and documentation
 
+```
+<div className="text-center">
+    <p className="mt-10">Sorry, no posts for that keyword.</p>
+    <Link href="/">Back to Home</Link>
+</div>
+```
+
 You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
 
 On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
